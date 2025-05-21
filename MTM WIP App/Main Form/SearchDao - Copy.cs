@@ -6,7 +6,7 @@ using static MTM_WIP_App.SqlVariables;
 using System.Reflection;
 using MTM_WIP_App.Main_Form;
 
-namespace MTM_WIP_App.Main_Form
+namespace MTM_WIP_App.Main_Form // Fully Migrated
 {
     internal static class SqlHelper
     {
@@ -275,7 +275,8 @@ namespace MTM_WIP_App.Main_Form
             }
         }
 
-        internal static async Task InsertUser(string email, string fullName, string shift, string isVitsUser, string? pin, bool useAsync = false)
+        internal static async Task InsertUser(string email, string fullName, string shift, string isVitsUser,
+            string? pin, bool useAsync = false)
         {
             try
             {
@@ -311,7 +312,8 @@ namespace MTM_WIP_App.Main_Form
             }
         }
 
-        internal static async Task UpdateUser(string email, string fullName, string shift, string isVitsUser, string? pin, bool useAsync = false)
+        internal static async Task UpdateUser(string email, string fullName, string shift, string isVitsUser,
+            string? pin, bool useAsync = false)
         {
             try
             {
@@ -577,7 +579,7 @@ namespace MTM_WIP_App.Main_Form
                 ErrorLogDao.HandleException_GeneralError_CloseApp(ex);
             }
         }
-    }
+
 
         internal static async Task<DataTable> GetAdmins(bool useAsync = false)
         {
@@ -1449,7 +1451,8 @@ namespace MTM_WIP_App.Main_Form
             throw new NotImplementedException();
         }
 
-        internal static void LogErrorWithMethod(Exception ex, [System.Runtime.CompilerServices.CallerMemberName] string methodName = "")
+        internal static void LogErrorWithMethod(Exception ex,
+            [System.Runtime.CompilerServices.CallerMemberName] string methodName = "")
         {
             AppLogger.Log($"Error in {methodName}: {ex.Message}");
         }
@@ -1878,9 +1881,9 @@ namespace MTM_WIP_App.Main_Form
 
     internal static class SystemDao
     {
-    // =====================
-    // SystemDao
-    // =====================
+        // =====================
+        // SystemDao
+        // =====================
 
 
         internal static string System_GetUserName()
@@ -2019,7 +2022,7 @@ namespace MTM_WIP_App.Main_Form
                 await ErrorLogDao.HandleException_GeneralError_CloseApp(ex, useAsync);
             }
         }
-    
+
         internal static async Task System_Last10_Buttons_ChangedAsync(bool useAsync = false)
         {
             try
@@ -2067,7 +2070,6 @@ namespace MTM_WIP_App.Main_Form
                 }
             }
         }
-
     }
 
     internal static class ChangeLogDao
@@ -2139,7 +2141,7 @@ namespace MTM_WIP_App.Main_Form
         }
 
         internal static async Task Primary_ChangeLog_Set_Theme_FontSizeAsync(string value, string user,
-    bool useAsync = false)
+            bool useAsync = false)
         {
             var parameters = new Dictionary<string, object>
             {
@@ -2205,6 +2207,7 @@ namespace MTM_WIP_App.Main_Form
                 return null;
             }
         }
+
         internal static async Task<List<string>> Primary_ChangeLog_Get_AllVersionsAsync(bool useAsync = false)
         {
             var versions = new List<string>();

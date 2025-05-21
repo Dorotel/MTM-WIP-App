@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace MTM_WIP_App.Main_Form
+namespace MTM_WIP_App.Main_Form // Fully Migrated
 {
     internal static class WipAppVariables
     {

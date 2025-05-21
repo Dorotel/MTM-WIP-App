@@ -1,7 +1,7 @@
 ﻿using MTM_WIP_App.Main_Form;
 using MySql.Data.MySqlClient;
 
-namespace MTM_WIP_App
+namespace MTM_WIP_App // Fully Migrated
 {
     public static class SqlVariables
     {
