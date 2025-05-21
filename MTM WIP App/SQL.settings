@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MTM_WIP_App" GeneratedClassName="SQL">
+  <Profiles />
+  <Settings>
+    <Setting Name="addressSetting" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172.16.1.104</Value>
+    </Setting>
+    <Setting Name="portSetting" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="VisualUserName" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)">User Name</Value>
+    </Setting>
+    <Setting Name="Theme_Name" Roaming="true" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Default (Black and White)</Value>
+    </Setting>
+    <Setting Name="Theme_TextSize" Roaming="true" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="VisualPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password</Value>
+    </Setting>
+    <Setting Name="LastShownVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="HideLastShown" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
