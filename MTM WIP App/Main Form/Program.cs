@@ -230,7 +230,7 @@ namespace MTM_WIP_App.Main_Form
                 Log($"Failed to clean up old log files or application data: {ex.Message}");
             }
         }
-    }
+    }//done
 
     internal static class VersionCheckerService
     {
@@ -317,9 +317,9 @@ namespace MTM_WIP_App.Main_Form
                 connection?.Close();
             }
         }
-    }
+    }//done
 
-    internal static class ShortcutManager
+    internal static class ShortcutManager//done
     {
         public static void EnsureApplicationShortcut()
         {
@@ -494,7 +494,7 @@ namespace MTM_WIP_App.Main_Form
                 AppLogger.Log($"Error deleting contents of directory {directoryPath}: {ex.Message}");
             }
         }
-    }
+    }//done
 
     internal static class ExceptionHandler
     {
@@ -542,5 +542,5 @@ namespace MTM_WIP_App.Main_Form
                 AppLogger.Log($"Error handling database error: {ex.Message}");
             }
         }
-    }
+    }//done
 }
